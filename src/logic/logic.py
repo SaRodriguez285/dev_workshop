@@ -14,8 +14,9 @@ class Logica:
         Returns:
             bool: Resultado de a AND b
         """
-        pass
-    
+        return a and b
+
+
     def OR(self, a, b):
         """
         Implementa la operación lógica OR.
