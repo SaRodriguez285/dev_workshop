@@ -157,3 +157,6 @@ class Magic:
             bool: True si es un cuadrado mágico, False en caso contrario
         """
         pass
+    
+
+Mañana tengo parcial de calculo y no he estudiado nada 
