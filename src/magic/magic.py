@@ -34,7 +34,7 @@ class Magic:
         secuencia = []
         for i in range(n):
             secuencia.append(self.fibonacci(i))
-         return secuencia
+        return secuencia
     
     def es_primo(self, n):
         """
@@ -46,7 +46,12 @@ class Magic:
         Returns:
             bool: True si n es primo, False en caso contrario
         """
-        pass
+        if n <= 1:
+            return False
+        for i in range(2, int(n ** 0.5) + 1):
+            if n % i == 0:
+                return False
+        return True
     
     def generar_primos(self, n):
         """
@@ -58,7 +63,11 @@ class Magic:
         Returns:
             list: Lista de números primos hasta n
         """
-        pass
+        primos = []
+        for i in range(2, n + 1):
+            if self.es_primo(i):
+                primos.append(i)
+        return primos
     
     def es_numero_perfecto(self, n):
         """
@@ -159,4 +168,4 @@ class Magic:
         pass
     
 
-Mañana tengo parcial de calculo y no he estudiado nada 
+"Mañana tengo parcial de calculo y no he estudiado nada"
