@@ -1,9 +1,4 @@
 class Logica:
-    """
-
-    Clase con métodos para realizar operaciones de lógica booleana y algoritmos.
-    """
-    
 
     def AND(self, a, b):
 
@@ -27,16 +22,7 @@ class Logica:
         return a != jls_extract_var
     
     def NAND(self, a, b):
-        """
-        Implementa la operación lógica NAND (NOT AND).
-        
-        Args:
-            a (bool): Primer valor booleano
-            b (bool): Segundo valor booleano
-            
-        Returns:
-            bool: Resultado de a NAND b
-        """
+
         return not (a and b)
 
 
@@ -66,16 +52,7 @@ class Logica:
     
 
     def implicacion(self, a, b):
-        """
-        Implementa la operación lógica de implicación (a -> b).
-        
-        Args:
-            a (bool): Primer valor booleano (antecedente)
-            b (bool): Segundo valor booleano (consecuente)
-            
-        Returns:
-            bool: Resultado de la implicación
-        """
+
         return not a or b
 
     
