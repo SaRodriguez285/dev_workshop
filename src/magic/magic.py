@@ -113,3 +113,4 @@ class Magic:
     
 
 "Mañana tengo parcial de calculo y no he estudiado nada"
+"Me saque 13.5 en el parcial de calculo"
