@@ -41,7 +41,7 @@ class Magic:
         suma_divisores = sum(i for i in range(1, n) if n % i == 0)
         return suma_divisores == n
 
-    
+
     def triangulo_pascal(self, filas):
 
         triangulo = [[1]]
@@ -111,8 +111,8 @@ class Magic:
         Returns:
             int: La suma de los dígitos de n
         """
-        pass
-    
+        return sum(int(digito) for digito in str(abs(n)))
+
     def es_numero_armstrong(self, n):
         """
         Verifica si un número es de Armstrong (igual a la suma de sus dígitos elevados a la potencia del número de dígitos).
@@ -123,7 +123,9 @@ class Magic:
         Returns:
             bool: True si n es un número de Armstrong, False en caso contrario
         """
-        pass
+        digitos = [int(d) for d in str(n)]
+        potencia = len(digitos)
+        return sum(d ** potencia for d in digitos) == n
     
     def es_cuadrado_magico(self, matriz):
         """
