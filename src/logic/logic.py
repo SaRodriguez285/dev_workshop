@@ -107,24 +107,18 @@ class Logica:
         pass
     
 
-    def bi_implicacion(self, a, b):
-        """
-
-        Implementa la operación lógica de bi-implicación (a <-> b).
-        
-
-        Args:
-
-            a (bool): Primer valor booleano
-
-            b (bool): Segundo valor booleano
-            
-        Returns:
-
-            bool: Resultado de la bi-implicación
-        """
-
-        pass
+def bi_implicacion(self, a, b):
+    """
+    Implementa la operación lógica de bi-implicación (a <-> b).
     
+    Args:
+        a (bool): Primer valor booleano
+        b (bool): Segundo valor booleano
+        
+    Returns:
+        bool: Resultado de la bi-implicación
+    """
+    return a = b
+
     
 
