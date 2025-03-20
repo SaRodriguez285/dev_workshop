@@ -86,18 +86,22 @@ def merge_ordenado(self, lista1, lista2):
     return lista_ordenada
 
     
-    def rotar_lista(self, lista, k):
-        """
-        Rota los elementos de una lista k posiciones a la derecha.
+def rotar_lista(self, lista, k):
+    """
+    Rota los elementos de una lista k posiciones a la derecha.
+    
+    Args:
+        lista (list): Lista a rotar
+        k (int): Número de posiciones a rotar
         
-        Args:
-            lista (list): Lista a rotar
-            k (int): Número de posiciones a rotar
-            
-        Returns:
-            list: Lista rotada
-        """
-        pass
+    Returns:
+        list: Lista rotada
+    """
+    if not lista:
+    
+    k = k % len(lista)
+    return lista[-k:] + lista[:-k]
+
     
     def encuentra_numero_faltante(self, lista):
         """
