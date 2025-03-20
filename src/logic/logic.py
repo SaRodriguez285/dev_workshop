@@ -66,25 +66,19 @@ class Logica:
 
         pass
     
-
-    def XNOR(self, a, b):
-        """
-
-        Implementa la operación lógica XNOR (NOT XOR).
+def XNOR(self, a, b):
+    """
+    Implementa la operación lógica XNOR (NOT XOR).
+    
+    Args:
+        a (bool): Primer valor booleano
+        b (bool): Segundo valor booleano
         
+    Returns:
+        bool: Resultado de a XNOR b
+    """
+    return a = b
 
-        Args:
-
-            a (bool): Primer valor booleano
-
-            b (bool): Segundo valor booleano
-            
-        Returns:
-
-            bool: Resultado de a XNOR b
-        """
-
-        pass
     
 
     def implicacion(self, a, b):
