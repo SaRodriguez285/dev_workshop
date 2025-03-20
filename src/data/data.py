@@ -4,57 +4,87 @@ class Data:
     Incluye implementaciones y algoritmos para arreglos, listas y otras estructuras.
     """
     
-    def invertir_lista(self, lista):
-        """
-        Invierte el orden de los elementos en una lista sin usar reversed() o lista[::-1].
-        
-        Args:
-            lista (list): Lista a invertir
-            
-        Returns:
-            list: Lista con los elementos en orden inverso
-        """
-        pass
+def invertir_lista(self, lista):
+    """
+    Invierte el orden de los elementos en una lista sin usar reversed() o lista[::-1].
     
-    def buscar_elemento(self, lista, elemento):
-        """
-        Busca un elemento en una lista y devuelve su índice (o -1 si no existe).
-        Implementación manual sin usar index().
+    Args:
+        lista (list): Lista a invertir
         
-        Args:
-            lista (list): Lista donde buscar
-            elemento: Elemento a buscar
-            
-        Returns:
-            int: Índice del elemento o -1 si no se encuentra
-        """
-        pass
+    Returns:
+        list: Lista con los elementos en orden inverso
+    """
+    lista_invertida = []
+    for i in range(len(lista) - 1, -1, -1):
+        lista_invertida.append(lista[i])
+    return lista_invertida
+
+def buscar_elemento(self, lista, elemento):
+    """
+    Busca un elemento en una lista y devuelve su índice (o -1 si no existe).
+    Implementación manual sin usar index().
     
-    def eliminar_duplicados(self, lista):
-        """
-        Elimina elementos duplicados de una lista sin usar set().
-        Mantiene el orden original de aparición.
+    Args:
+        lista (list): Lista donde buscar
+        elemento: Elemento a buscar
         
-        Args:
-            lista (list): Lista con posibles duplicados
-            
-        Returns:
-            list: Lista sin elementos duplicados
-        """
-        pass
+    Returns:
+        int: Índice del elemento o -1 si no se encuentra
+    """
+    for i in range(len(lista)):
+        if lista[i] == elemento:
+            return i
+    return -1
+
+def eliminar_duplicados(self, lista):
+    """
+    Elimina elementos duplicados de una lista sin usar set().
+    Mantiene el orden original de aparición.
     
-    def merge_ordenado(self, lista1, lista2):
-        """
-        Combina dos listas ordenadas en una sola lista ordenada.
+    Args:
+        lista (list): Lista con posibles duplicados
         
-        Args:
-            lista1 (list): Primera lista ordenada
-            lista2 (list): Segunda lista ordenada
-            
-        Returns:
-            list: Lista combinada y ordenada
-        """
-        pass
+    Returns:
+        list: Lista sin elementos duplicados
+    """
+    lista_sin_duplicados = []
+    for item in lista:
+        if item not in lista_sin_duplicados:
+            lista_sin_duplicados.append(item)
+    return lista_sin_duplicados
+
+def merge_ordenado(self, lista1, lista2):
+    """
+    Combina dos listas ordenadas en una sola lista ordenada.
+    
+    Args:
+        lista1 (list): Primera lista ordenada
+        lista2 (list): Segunda lista ordenada
+        
+    Returns:
+        list: Lista combinada y ordenada
+    """
+    i, j = 0, 0
+    lista_ordenada = []
+    
+    while i < len(lista1) and j < len(lista2):
+        if lista1[i] < lista2[j]:
+            lista_ordenada.append(lista1[i])
+            i += 1
+        else:
+            lista_ordenada.append(lista2[j])
+            j += 1
+    
+    while i < len(lista1):
+        lista_ordenada.append(lista1[i])
+        i += 1
+        
+    while j < len(lista2):
+        lista_ordenada.append(lista2[j])
+        j += 1
+
+    return lista_ordenada
+
     
     def rotar_lista(self, lista, k):
         """
