@@ -104,30 +104,39 @@ def rotar_lista(self, lista, k):
     return lista[-k:] + lista[:-k]
 
     
-    def encuentra_numero_faltante(self, lista):
-        """
-        Encuentra el número faltante en una lista de enteros del 1 al n.
-        
-        Args:
-            lista (list): Lista de enteros del 1 al n con un número faltante
-            
-        Returns:
-            int: El número que falta en la secuencia
-        """
-        pass
+def encuentra_numero_faltante(self, lista):
+    """
+    Encuentra el número faltante en una lista de enteros del 1 al n.
     
-    def es_subconjunto(self, conjunto1, conjunto2):
-        """
-        Verifica si conjunto1 es subconjunto de conjunto2 sin usar set.
+    Args:
+        lista (list): Lista de enteros del 1 al n con un número faltante
         
-        Args:
-            conjunto1 (list): Posible subconjunto
-            conjunto2 (list): Conjunto principal
-            
-        Returns:
-            bool: True si conjunto1 es subconjunto de conjunto2, False en caso contrario
-        """
-        pass
+    Returns:
+        int: El número que falta en la secuencia
+    """
+    n = len(lista) + 1
+    suma_total = n * (n + 1) // 2
+    suma_lista = sum(lista)
+    
+    return suma_total - suma_lista
+
+
+def es_subconjunto(self, conjunto1, conjunto2):
+    """
+    Verifica si conjunto1 es subconjunto de conjunto2 sin usar set.
+    
+    Args:
+        conjunto1 (list): Posible subconjunto
+        conjunto2 (list): Conjunto principal
+        
+    Returns:
+        bool: True si conjunto1 es subconjunto de conjunto2, False en caso contrario
+    """
+    for elemento in conjunto1:
+        if elemento not in conjunto2:
+            return False
+    return True
+
     
     def implementar_pila(self):
         """
