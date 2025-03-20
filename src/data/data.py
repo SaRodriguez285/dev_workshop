@@ -98,6 +98,7 @@ def rotar_lista(self, lista, k):
         list: Lista rotada
     """
     if not lista:
+        return []
     
     k = k % len(lista)
     return lista[-k:] + lista[:-k]
