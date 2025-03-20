@@ -198,8 +198,6 @@ def area_superficie_cubo(self, lado):
         float: Área de la superficie del cubo
     """
     return 6 * (lado ** 2)
-    
-import math
 
 def volumen_esfera(self, radio):
     """
