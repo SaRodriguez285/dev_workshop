@@ -1,3 +1,4 @@
+import math
 class Geometria:
 
     def area_rectangulo(self, base, altura):
