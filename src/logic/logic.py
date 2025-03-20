@@ -74,22 +74,17 @@ class Logica:
 
     def implicacion(self, a, b):
         """
-
         Implementa la operación lógica de implicación (a -> b).
         
-
         Args:
-
             a (bool): Primer valor booleano (antecedente)
-
             b (bool): Segundo valor booleano (consecuente)
             
         Returns:
-
             bool: Resultado de la implicación
         """
+        return not a or b
 
-        pass
     
 
     def bi_implicacion(self, a, b):
