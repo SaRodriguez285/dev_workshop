@@ -35,18 +35,10 @@ class Magic:
         return primos
     
     def es_numero_perfecto(self, n):
-        """
-        Verifica si un número es perfecto (igual a la suma de sus divisores propios).
-        
-        Args:
-            n (int): Número a verificar
-            
-        Returns:
-            bool: True si n es un número perfecto, False en caso contrario
-        """
+
         if n < 2:
             return False
-        suma_divisores = sum(i for i in range(1, n))
+        suma_divisores = sum(i for i in range(1, n) if n % i == 0)
         return suma_divisores == n
 
     
