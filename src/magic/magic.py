@@ -90,16 +90,14 @@ class Magic:
         return sum(d ** potencia for d in digitos) == n
     
     def es_cuadrado_magico(self, matriz):
-        """
-        Verifica si una matriz es un cuadrado mágico (suma igual en filas, columnas y diagonales).
-        
-        Args:
-            matriz (list): Lista de listas que representa una matriz cuadrada
-            
-        Returns:
-            bool: True si es un cuadrado mágico, False en caso contrario
-        """
-        pass
+
+        if not matriz or any(len(fila) != len(matriz) for fila in matriz):
+            return False
+
+        n = len(matriz)
+        suma_objetivo = sum(matriz[0])
+
+        return True
     
 
 "Mañana tengo parcial de calculo y no he estudiado nada"
