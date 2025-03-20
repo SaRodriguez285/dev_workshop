@@ -91,8 +91,10 @@ class Magic:
         Returns:
             int: El máximo común divisor de a y b
         """
-        pass
-    
+        while b:
+            a, b = b, a % b
+        return a
+
     def mcm(self, a, b):
         """
         Calcula el mínimo común múltiplo de dos números.
@@ -104,8 +106,9 @@ class Magic:
         Returns:
             int: El mínimo común múltiplo de a y b
         """
-        pass
-    
+        return abs(a * b) // self.mcd(a, b) if a and b else 0
+
+        
     def suma_digitos(self, n):
         """
         Calcula la suma de los dígitos de un número.
