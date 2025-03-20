@@ -10,12 +10,14 @@ class Magic:
         else:
             return self.fibonacci(n - 1) + self.fibonacci(n - 2)
     
+    
     def secuencia_fibonacci(self, n):
 
         secuencia = []
         for i in range(n):
             secuencia.append(self.fibonacci(i))
         return secuencia
+    
     
     def es_primo(self, n):
 
@@ -26,6 +28,7 @@ class Magic:
                 return False
         return True
     
+    
     def generar_primos(self, n):
 
         primos = []
@@ -33,6 +36,7 @@ class Magic:
             if self.es_primo(i):
                 primos.append(i)
         return primos
+    
     
     def es_numero_perfecto(self, n):
 
@@ -55,15 +59,7 @@ class Magic:
 
     
     def factorial(self, n):
-        """
-        Calcula el factorial de un número.
-        
-        Args:
-            n (int): Número para calcular su factorial
-            
-        Returns:
-            int: El factorial de n
-        """
+
         if n == 0 or n == 1:
             return 1
         resultado = 1
@@ -73,56 +69,22 @@ class Magic:
 
     
     def mcd(self, a, b):
-        """
-        Calcula el máximo común divisor de dos números.
-        
-        Args:
-            a (int): Primer número
-            b (int): Segundo número
-            
-        Returns:
-            int: El máximo común divisor de a y b
-        """
+
         while b:
             a, b = b, a % b
         return a
 
     def mcm(self, a, b):
-        """
-        Calcula el mínimo común múltiplo de dos números.
-        
-        Args:
-            a (int): Primer número
-            b (int): Segundo número
-            
-        Returns:
-            int: El mínimo común múltiplo de a y b
-        """
+
         return abs(a * b) // self.mcd(a, b) if a and b else 0
 
         
     def suma_digitos(self, n):
-        """
-        Calcula la suma de los dígitos de un número.
-        
-        Args:
-            n (int): Número para sumar sus dígitos
-            
-        Returns:
-            int: La suma de los dígitos de n
-        """
+
         return sum(int(digito) for digito in str(abs(n)))
 
     def es_numero_armstrong(self, n):
-        """
-        Verifica si un número es de Armstrong (igual a la suma de sus dígitos elevados a la potencia del número de dígitos).
-        
-        Args:
-            n (int): Número a verificar
-            
-        Returns:
-            bool: True si n es un número de Armstrong, False en caso contrario
-        """
+
         digitos = [int(d) for d in str(n)]
         potencia = len(digitos)
         return sum(d ** potencia for d in digitos) == n
