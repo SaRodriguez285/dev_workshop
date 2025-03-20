@@ -52,11 +52,11 @@ class Geometria:
         Returns:
             float: Perímetro del círculo
         """
-        pass
+        return 2 * math.pi * radio
     
     def area_triangulo(self, base, altura):
         """
-        Calcula el área de un triángulo.
+        Calcula el área de un triángulo .
         
         Args:
             base (float): Longitud de la base del triángulo
@@ -65,7 +65,7 @@ class Geometria:
         Returns:
             float: Área del triángulo
         """
-        pass
+        return base + altura 
     
     def perimetro_triangulo(self, lado1, lado2, lado3):
         """
@@ -79,7 +79,7 @@ class Geometria:
         Returns:
             float: Perímetro del triángulo
         """
-        pass
+        return lado1 + lado2 + lado3
     
     def es_triangulo_valido(self, lado1, lado2, lado3):
         """
