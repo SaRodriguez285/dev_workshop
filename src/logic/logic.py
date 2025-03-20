@@ -26,26 +26,19 @@ class Logica:
         jls_extract_var = b
         return a != jls_extract_var
     
-
     def NAND(self, a, b):
         """
-
         Implementa la operación lógica NAND (NOT AND).
         
-
         Args:
-
             a (bool): Primer valor booleano
-
             b (bool): Segundo valor booleano
             
         Returns:
-
             bool: Resultado de a NAND b
         """
+        return not (a and b)
 
-        pass
-    
 
     def NOR(self, a, b):
         """
