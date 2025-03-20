@@ -138,66 +138,66 @@ def area_pentagono_regular(self, lado, apotema):
     perimetro = 5 * lado
     return (perimetro * apotema) / 2
     
-    def perimetro_pentagono_regular(self, lado):
-        """
-        Calcula el perímetro de un pentágono regular.
-        
-        Args:
-            lado (float): Longitud del lado del pentágono
-            
-        Returns:
-            float: Perímetro del pentágono regular
-        """
-        pass
+def perimetro_pentagono_regular(self, lado):
+    """
+    Calcula el perímetro de un pentágono regular.
     
-    def area_hexagono_regular(self, lado, apotema):
-        """
-        Calcula el área de un hexágono regular.
+    Args:
+        lado (float): Longitud del lado del pentágono
         
-        Args:
-            lado (float): Longitud del lado del hexágono
-            apotema (float): Longitud de la apotema (distancia del centro al punto medio de un lado)
-            
-        Returns:
-            float: Área del hexágono regular
-        """
-        pass
+    Returns:
+        float: Perímetro del pentágono regular
+    """
+    return 5 * lado
     
-    def perimetro_hexagono_regular(self, lado):
-        """
-        Calcula el perímetro de un hexágono regular.
-        
-        Args:
-            lado (float): Longitud del lado del hexágono
-            
-        Returns:
-            float: Perímetro del hexágono regular
-        """
-        pass
+def area_hexagono_regular(self, lado, apotema):
+    """
+    Calcula el área de un hexágono regular.
     
-    def volumen_cubo(self, lado):
-        """
-        Calcula el volumen de un cubo.
+    Args:
+        lado (float): Longitud del lado del hexágono
+        apotema (float): Longitud de la apotema
         
-        Args:
-            lado (float): Longitud del lado del cubo
-            
-        Returns:
-            float: Volumen del cubo
-        """
-        pass
+    Returns:
+        float: Área del hexágono regular
+    """
+    return (3 * lado * apotema)
+
+def perimetro_hexagono_regular(self, lado):
+    """
+    Calcula el perímetro de un hexágono regular.
     
-    def area_superficie_cubo(self, lado):
-        """
-        Calcula el área de la superficie de un cubo.
+    Args:
+        lado (float): Longitud del lado del hexágono
         
-        Args:
-            lado (float): Longitud del lado del cubo
-            
-        Returns:
-            float: Área de la superficie del cubo
-        """
-        pass
+    Returns:
+        float: Perímetro del hexágono regular
+    """
+    return 6 * lado
+
+def volumen_cubo(self, lado):
+    """
+    Calcula el volumen de un cubo.
+    
+    Args:
+        lado (float): Longitud del lado del cubo
+        
+    Returns:
+        float: Volumen del cubo
+    """
+    return lado ** 3
+
+def area_superficie_cubo(self, lado):
+    """
+    Calcula el área de la superficie de un cubo.
+    
+    Args:
+        lado (float): Longitud del lado del cubo
+        
+    Returns:
+        float: Área de la superficie del cubo
+    """
+    return 6 * (lado ** 2)
     
     def volumen_esfera(self, radio):
         """
