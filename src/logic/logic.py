@@ -22,21 +22,7 @@ class Logica:
     
 
     def XOR(self, a, b):
-        """
 
-        Implementa la operación lógica XOR (OR exclusivo).
-        
-
-        Args:
-
-            a (bool): Primer valor booleano
-
-            b (bool): Segundo valor booleano
-            
-        Returns:
-
-            bool: Resultado de a XOR b
-        """
         jls_extract_var = b
         return a != jls_extract_var
     
