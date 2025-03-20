@@ -73,6 +73,7 @@ class Magic:
         while b:
             a, b = b, a % b
         return a
+    
 
     def mcm(self, a, b):
 
@@ -82,12 +83,14 @@ class Magic:
     def suma_digitos(self, n):
 
         return sum(int(digito) for digito in str(abs(n)))
+    
 
     def es_numero_armstrong(self, n):
 
         digitos = [int(d) for d in str(n)]
         potencia = len(digitos)
         return sum(d ** potencia for d in digitos) == n
+    
     
     def es_cuadrado_magico(self, matriz):
 
@@ -96,6 +99,15 @@ class Magic:
 
         n = len(matriz)
         suma_objetivo = sum(matriz[0])
+
+
+        for i in range(n):
+            if sum(matriz[i]) != suma_objetivo or sum(matriz[j][i] for j in range(n)) != suma_objetivo:
+                return False
+            
+
+        if sum(matriz[i][i] for i in range(n)) != suma_objetivo or sum(matriz[i][n - 1 - i] for i in range(n)) != suma_objetivo:
+            return False
 
         return True
     
