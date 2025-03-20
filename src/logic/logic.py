@@ -6,21 +6,7 @@ class Logica:
     
 
     def AND(self, a, b):
-        """
 
-        Implementa la operación lógica AND.
-        
-
-        Args:
-
-            a (bool): Primer valor booleano
-
-            b (bool): Segundo valor booleano
-            
-        Returns:
-
-            bool: Resultado de a AND b
-        """
         return a and b
     
 
