@@ -12,21 +12,7 @@ class Logica:
 
 
     def OR(self, a, b):
-        """
 
-        Implementa la operación lógica OR.
-        
-
-        Args:
-
-            a (bool): Primer valor booleano
-
-            b (bool): Segundo valor booleano
-            
-        Returns:
-
-            bool: Resultado de a OR b
-        """
         return a or b
     
 
