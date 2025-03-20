@@ -33,7 +33,7 @@ class Logica:
     
     def XNOR(self, a, b):
 
-        return a = b
+        return a == b
 
     
 
@@ -45,7 +45,7 @@ class Logica:
 
     def bi_implicacion(self, a, b):
 
-        return a = b
+        return a == b
 
     
 
