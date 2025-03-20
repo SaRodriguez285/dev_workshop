@@ -110,18 +110,19 @@ def area_trapecio(self, base_mayor, base_menor, altura):
     return (base_mayor + base_menor) * altura / 2
 
     
-    def area_rombo(self, diagonal_mayor, diagonal_menor):
-        """
-        Calcula el área de un rombo usando sus diagonales.
+def area_rombo(self, diagonal_mayor, diagonal_menor):
+    """
+    Calcula el área de un rombo usando sus diagonales.
+    
+    Args:
+        diagonal_mayor (float): Longitud de la diagonal mayor
+        diagonal_menor (float): Longitud de la diagonal menor
         
-        Args:
-            diagonal_mayor (float): Longitud de la diagonal mayor
-            diagonal_menor (float): Longitud de la diagonal menor
-            
-        Returns:
-            float: Área del rombo
-        """
-        pass
+    Returns:
+        float: Área del rombo
+    """
+    return (diagonal_mayor * diagonal_menor) / 2
+
     
     def area_pentagono_regular(self, lado, apotema):
         """
